@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --navbar-height: 60px;
+}
+
+/* Navigation Bar*/
+#navbar{
+    display: flex;
+    align-items: center;
+}
+
+
+#logo{
+    margin: 10px 30px;
+
+}
+
+#logo img {
+    height: 59px;
+    margin: 3px 6px;
+
+}
+
+/* navigation bar :list styling */
+#navbar{
+    position: relative;
+}
+
+#navbar ul{
+    display: flex;
+    font-family: 'ubuntu' , sans-serif ;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.3rem;
+
+}
+
+#navbar ul li a {
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+
+}
+
+/* Home Section */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#home::before{
+    content:"";
+    position: absolute;
+    background: url(image/bg1.jpg) no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+#home h1{
+    color: white;
+    text-align: center;
+    font-family: 'ubuntu' , sans-serif ;
+}
+
+#home p{ 
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'ubuntu' , sans-serif ;
+}
+
+
+
+/* services section  */
+#services{
+    margin: 34px;
+    display: flex;
+
+}
+
+#services .box{
+    border: 2px solid brown;
+}
+
+#services .box img {
+    height: 100px;
+    margin: auto;
+    display: block;
+}
+
+
+/* Utility class */
+
+.h-primary{
+    font-size: 3.8rem;
+    padding: 12px;
+}
+
+.h-secondary center {
+    font-size: 2.8rem;
+    padding: 12px;
+}
+
+.btn {
+    padding: 6px 35px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 25px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+}
+
+.center{
+    text-align: center;
+}
